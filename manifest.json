@@ -1,0 +1,14 @@
+{
+    "name": "Sample: Insert Text into Twitter Timeline.",
+    "version": "1.0",
+    "description": "",
+    "content_scripts": [{
+        "run_at": "document_end",
+        "matches": ["https://twitter.com/*"],
+        "js": ["content_script.js"]
+    }],
+    "permissions": [
+        // "declarativeContent"
+    ],
+    "manifest_version": 2
+}
